@@ -49,9 +49,9 @@ namespace QCM
             FormInscriptionUtilisateur formCRUD = new FormInscriptionUtilisateur();
             Controleur.getModele().charger_donnees("SLAM3_TP2_UTILISATEUR");
             bool trouve = true;
-            for (int i = 0; i < Controleur.getModele().DT1.Rows.Count; i++)
+            for (int i = 0; i < Controleur.getModele().DT[1].Rows.Count; i++)
             {
-                if (Controleur.getModele().DT1.Rows[i]["LOGINUTILISATEUR"].ToString()==identifiantInscription.Text)
+                if (Controleur.getModele().DT[1].Rows[i]["LOGINUTILISATEUR"].ToString()==identifiantInscription.Text)
                 {
                     MessageBox.Show("Cet identifiant existe déja" + " ", "Problème connexion", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     trouve = false;
@@ -81,7 +81,8 @@ namespace QCM
                 }
                 if (trouve == true)
                 {
-                    Controleur.Vmodele.DT1.Rows.Add(NouvLigne);
+                    Controleur.Vmodele.DT[1].Rows.Add(NouvLigne);
+                    Controleur.Vmodele.DA[1].Update(Controleur.Vmodele.DT[1]);
                     MessageBox.Show("Vous êtes maintenant inscrit");
                     FormConnexionUtilisateur FCU = new FormConnexionUtilisateur();
                     FCU.Show();
