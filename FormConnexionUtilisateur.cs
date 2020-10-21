@@ -34,11 +34,11 @@ namespace QCM
 
         private void boutonValider_Click(object sender, EventArgs e)
         {
-            Controleur.getModele().charger_donnees("SLAM3_TP2_UTILISATEUR");
+            Controleur.Vmodele.charger_donnees("SLAM3_TP2_UTILISATEUR");
             bool trouve = false;
-            for(int i=0;i < Controleur.getModele().DT1.Rows.Count; i++)
+            for(int i=0;i < Controleur.Vmodele.DT[1].Rows.Count; i++)
             {
-                if (identifiant.Text == Controleur.getModele().DT1.Rows[i]["LOGINUTILISATEUR"].ToString() && motdepasse.Text == Controleur.getModele().DT1.Rows[i]["MDPUTILISATEUR"].ToString())
+                if (identifiant.Text == Controleur.Vmodele.DT[1].Rows[i]["LOGINUTILISATEUR"].ToString() && motdepasse.Text == Controleur.Vmodele.DT[1].Rows[i]["MDPUTILISATEUR"].ToString())
                 {
                     MessageBox.Show("Bienvenue dans le QCM " + " ", "Bienvenue", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     trouve = true;

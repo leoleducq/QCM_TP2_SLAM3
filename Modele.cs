@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 using System.Data;
 using System.Windows.Forms;
-namespace WindowsFormsApp2
+namespace QCM
 {
     class Modele
     {
@@ -51,7 +51,7 @@ namespace WindowsFormsApp2
         public void seconnecter()
         {
             // paramètres de connexion à modifier selon sa BD et son serveur de BD 
-            string myConnectionString = "Database=2021_slamBDD31;Data Source=192.168.10.70;User Id=2021_slamBDD31; Password = P@ssw0rd;";
+            string myConnectionString = "Database=2021_slamBDD24;Data Source=192.168.10.70;User Id=2021_slamBDD24; Password = P@ssw0rd;";
             myConnection = new MySqlConnection(myConnectionString);
             try // tentative   
             { myConnection.Open(); connopen = true; }
@@ -120,9 +120,9 @@ namespace WindowsFormsApp2
                 charger("show tables;", dT[0], dA[0]);
             }
 
-            if (table == "SLAM3_TP2_UILISATEUR")
+            if (table == "SLAM3_TP2_UTILISATEUR")
             {
-                charger("select * from SLAM3_TP2_UILISATEUR;", dT[1], dA[1]);
+                charger("select * from SLAM3_TP2_UTILISATEUR;", dT[1], dA[1]);
             }
             if (table == "SLAM3_TP2_THEME")
             {
