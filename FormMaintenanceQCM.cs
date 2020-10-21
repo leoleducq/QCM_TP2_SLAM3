@@ -23,5 +23,15 @@ namespace QCM
             FormChoixMode form3 = new FormChoixMode();
             form3.Show();
         }
+
+        private void FormMaintenanceQCM_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
