@@ -41,6 +41,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.prenomUtilisateur = new System.Windows.Forms.TextBox();
             this.nomUtilisateur = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.remotdepasseInscription = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // boutonRevenir
@@ -102,7 +104,7 @@
             // 
             this.labelIdentifiant.AutoSize = true;
             this.labelIdentifiant.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelIdentifiant.Location = new System.Drawing.Point(88, 227);
+            this.labelIdentifiant.Location = new System.Drawing.Point(146, 196);
             this.labelIdentifiant.Name = "labelIdentifiant";
             this.labelIdentifiant.Size = new System.Drawing.Size(128, 29);
             this.labelIdentifiant.TabIndex = 24;
@@ -112,7 +114,7 @@
             // 
             this.labelMotdepasse.AutoSize = true;
             this.labelMotdepasse.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMotdepasse.Location = new System.Drawing.Point(46, 278);
+            this.labelMotdepasse.Location = new System.Drawing.Point(104, 239);
             this.labelMotdepasse.Name = "labelMotdepasse";
             this.labelMotdepasse.Size = new System.Drawing.Size(170, 29);
             this.labelMotdepasse.TabIndex = 25;
@@ -121,7 +123,7 @@
             // identifiantInscription
             // 
             this.identifiantInscription.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.identifiantInscription.Location = new System.Drawing.Point(285, 227);
+            this.identifiantInscription.Location = new System.Drawing.Point(285, 196);
             this.identifiantInscription.Name = "identifiantInscription";
             this.identifiantInscription.Size = new System.Drawing.Size(216, 29);
             this.identifiantInscription.TabIndex = 22;
@@ -129,7 +131,7 @@
             // motdepasseInscription
             // 
             this.motdepasseInscription.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.motdepasseInscription.Location = new System.Drawing.Point(285, 279);
+            this.motdepasseInscription.Location = new System.Drawing.Point(285, 240);
             this.motdepasseInscription.Name = "motdepasseInscription";
             this.motdepasseInscription.PasswordChar = '*';
             this.motdepasseInscription.Size = new System.Drawing.Size(216, 29);
@@ -139,7 +141,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(106, 175);
+            this.label1.Location = new System.Drawing.Point(164, 149);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(110, 29);
             this.label1.TabIndex = 31;
@@ -149,7 +151,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(139, 120);
+            this.label2.Location = new System.Drawing.Point(197, 101);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(77, 29);
             this.label2.TabIndex = 32;
@@ -158,24 +160,53 @@
             // prenomUtilisateur
             // 
             this.prenomUtilisateur.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.prenomUtilisateur.Location = new System.Drawing.Point(285, 176);
+            this.prenomUtilisateur.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.prenomUtilisateur.Location = new System.Drawing.Point(285, 150);
             this.prenomUtilisateur.Name = "prenomUtilisateur";
             this.prenomUtilisateur.Size = new System.Drawing.Size(216, 29);
             this.prenomUtilisateur.TabIndex = 33;
+            this.prenomUtilisateur.Text = "Facultatif";
+            this.prenomUtilisateur.Enter += new System.EventHandler(this.prenomUtilisateur_Enter);
+            this.prenomUtilisateur.Leave += new System.EventHandler(this.prenomUtilisateur_Leave);
             // 
             // nomUtilisateur
             // 
             this.nomUtilisateur.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nomUtilisateur.Location = new System.Drawing.Point(285, 120);
+            this.nomUtilisateur.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.nomUtilisateur.Location = new System.Drawing.Point(285, 102);
             this.nomUtilisateur.Name = "nomUtilisateur";
             this.nomUtilisateur.Size = new System.Drawing.Size(216, 29);
             this.nomUtilisateur.TabIndex = 34;
+            this.nomUtilisateur.Text = "Facultatif";
+            this.nomUtilisateur.Enter += new System.EventHandler(this.nomUtilisateur_Enter);
+            this.nomUtilisateur.Leave += new System.EventHandler(this.nomUtilisateur_Leave);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(12, 284);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(262, 29);
+            this.label3.TabIndex = 35;
+            this.label3.Text = "Retaper mot de passe :";
+            // 
+            // remotdepasseInscription
+            // 
+            this.remotdepasseInscription.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.remotdepasseInscription.Location = new System.Drawing.Point(285, 285);
+            this.remotdepasseInscription.Name = "remotdepasseInscription";
+            this.remotdepasseInscription.PasswordChar = '*';
+            this.remotdepasseInscription.Size = new System.Drawing.Size(216, 29);
+            this.remotdepasseInscription.TabIndex = 36;
             // 
             // FormInscriptionUtilisateur
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.remotdepasseInscription);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.nomUtilisateur);
             this.Controls.Add(this.prenomUtilisateur);
             this.Controls.Add(this.label2);
@@ -212,5 +243,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox prenomUtilisateur;
         private System.Windows.Forms.TextBox nomUtilisateur;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox remotdepasseInscription;
     }
 }

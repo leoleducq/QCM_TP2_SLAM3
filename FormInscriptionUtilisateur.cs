@@ -37,10 +37,13 @@ namespace QCM
 
         private void boutonAnnuler1_Click(object sender, EventArgs e)
         {
-            nomUtilisateur.Clear();
-            prenomUtilisateur.Clear();
+            nomUtilisateur.Text="Facultatif";
+            nomUtilisateur.ForeColor = Color.LightGray;
+            prenomUtilisateur.Text="Facultatif";
+            prenomUtilisateur.ForeColor = Color.LightGray;
             identifiantInscription.Clear();
-            motdepasseInscription.Clear();                       
+            motdepasseInscription.Clear();
+            remotdepasseInscription.Clear();
         }
 
         private void boutonValider1_Click(object sender, EventArgs e)
@@ -96,6 +99,44 @@ namespace QCM
             }
         }
 
+        private void nomUtilisateur_Enter(object sender, EventArgs e)
+        {
+            string nom = nomUtilisateur.Text;
+            if(nom.Trim().Equals("Facultatif"))
+            {
+                nomUtilisateur.Text = "";
+                nomUtilisateur.ForeColor = Color.Black;
+            }
+        }
 
+        private void nomUtilisateur_Leave(object sender, EventArgs e)
+        {
+            string nom = nomUtilisateur.Text;
+            if (nom.ToLower().Trim().Equals("Facultatif") || nom.Trim().Equals(""))
+            {
+                nomUtilisateur.Text = "Facultatif";
+                nomUtilisateur.ForeColor = Color.LightGray;
+            }
+        }
+
+        private void prenomUtilisateur_Enter(object sender, EventArgs e)
+        {
+            string prenom = prenomUtilisateur.Text;
+            if (prenom.Trim().Equals("Facultatif"))
+            {
+                prenomUtilisateur.Text = "";
+                prenomUtilisateur.ForeColor = Color.Black;
+            }
+        }
+
+        private void prenomUtilisateur_Leave(object sender, EventArgs e)
+        {
+            string prenom = prenomUtilisateur.Text;
+            if (prenom.ToLower().Trim().Equals("Facultatif") || prenom.Trim().Equals(""))
+            {
+                prenomUtilisateur.Text = "Facultatif";
+                prenomUtilisateur.ForeColor = Color.LightGray;
+            }
+        }
     }
 }
