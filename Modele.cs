@@ -35,7 +35,7 @@ namespace WindowsFormsApp2
         public Modele()
         {
             // instanciation des collections des Datatable et DataAdapter
-            for (int i = 0; i < 6; i++)
+            for (int i = 0; i < 7; i++)
             {
                 dA.Add(new MySqlDataAdapter());
                 dT.Add(new DataTable());
@@ -120,25 +120,29 @@ namespace WindowsFormsApp2
                 charger("show tables;", dT[0], dA[0]);
             }
 
-            if (table == "SLAM3_UILISATEUR")
+            if (table == "SLAM3_TP2_UILISATEUR")
             {
-                charger("select * from SLAM3_UILISATEUR;", dT[1], dA[1]);
+                charger("select * from SLAM3_TP2_UILISATEUR;", dT[1], dA[1]);
             }
-            if (table == "SLAM3_THEME")
+            if (table == "SLAM3_TP2_THEME")
             {
-                charger("select * from SLAM3_THEME;", dT[2], dA[2]);
+                charger("select * from SLAM3_TP2_THEME;", dT[2], dA[2]);
             }
-            if (table == "SLAM3_QCM")
+            if (table == "SLAM3_TP2_QCM")
             {
-                charger("select * from SLAM3_QCM;", dT[3], dA[3]);
+                charger("select * from SLAM3_TP2_QCM;", dT[3], dA[3]);
             }
-            if (table == "SLAM3_REPONSE")
+            if(table == "SLAM3_TP2_QUESTIONS")
             {
-                charger("select * from SLAM3_REPONSE;", dT[4], dA[4]);
+                charger("select * from SLAM3_TP2_QUESTIONS;", dT[4], dA[4]);
             }
-            if (table == "SLAM3_Question")
+            if (table == "SLAM3_TP2_REPONSEQUESTION")
             {
-                charger("select * from SLAM3_Question;", dT[5], dA[5]);
+                charger("select * from SLAM3_TP2_REPONSEQUESTION;", dT[5], dA[5]);
+            }
+            if (table == "SLAM3_TP2_REPONSEUTILISATEUR")
+            {
+                charger("select * from SLAM3_TP2_REPONSEUTILISATEUR;", dT[6], dA[6]);
             }
 
         }
