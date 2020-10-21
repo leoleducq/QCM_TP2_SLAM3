@@ -74,7 +74,17 @@ namespace QCM
                     MessageBox.Show("Veuillez entrer un mot de passe");
                     trouve = false;
                 }
-                else
+                else if(remotdepasseInscription.Text=="")
+                {
+                    MessageBox.Show("Veuillez confirmer votre mot de passe");
+                    trouve = false;
+                }
+                else if(motdepasseInscription.Text != remotdepasseInscription.Text)
+                {
+                    MessageBox.Show("Les mots de passes ne sont pas identiques");
+                    trouve = false;
+                }
+               else
                 {
                     if(prenomUtilisateur.Text=="Facultatif")
                     {
