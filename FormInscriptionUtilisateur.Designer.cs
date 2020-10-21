@@ -147,6 +147,7 @@
             this.Controls.Add(this.identifiantInscription);
             this.Name = "FormInscriptionUtilisateur";
             this.Text = "Inscription Utilisateur";
+            this.Load += new System.EventHandler(this.FormInscriptionUtilisateur_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -113,6 +113,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FormChoixMode";
             this.Text = "Choix du mode d\'utilisation";
+            this.Load += new System.EventHandler(this.FormChoixMode_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

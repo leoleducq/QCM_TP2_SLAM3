@@ -37,5 +37,19 @@ namespace QCM
             FormInscriptionUtilisateur form6 = new FormInscriptionUtilisateur();
             form6.Show();
         }
+
+        private void FormChoixMode_Load(object sender, EventArgs e)
+        {
+            Controleur.init();
+            Controleur.Vmodele.seconnecter();
+            if (Controleur.Vmodele.Connopen == false)
+            {
+                MessageBox.Show("Erreur de connexion");
+            }
+            else
+            {
+                MessageBox.Show("BD connectée");
+            }
+        }
     }
 }

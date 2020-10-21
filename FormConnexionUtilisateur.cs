@@ -29,16 +29,7 @@ namespace QCM
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Controleur.init();
-            Controleur.Vmodele.seconnecter();
-            if (Controleur.Vmodele.Connopen == false)
-            {
-                MessageBox.Show("Erreur de connexion");
-            }
-            else
-            {
-                MessageBox.Show("BD connectée");
-            }
+
         }
 
         private void boutonValider_Click(object sender, EventArgs e)

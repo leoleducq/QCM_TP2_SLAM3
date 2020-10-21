@@ -17,18 +17,9 @@ namespace QCM
             InitializeComponent();
         }
 
-        private void Form6_Load(object sender, EventArgs e)
+        private void FormInscriptionUtilisateur_Load(object sender, EventArgs e)
         {
-            Controleur.init();
-            Controleur.Vmodele.seconnecter();
-            if (Controleur.Vmodele.Connopen == false)
-            {
-                MessageBox.Show("Erreur de connexion");
-            }
-            else
-            {
-                MessageBox.Show("BD connectée");
-            }
+
         }
 
         private void boutonRevenir_Click(object sender, EventArgs e)
@@ -67,5 +58,7 @@ namespace QCM
                 MessageBox.Show("Erreur dans les identifiants de connexion" + "", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+
     }
 }
