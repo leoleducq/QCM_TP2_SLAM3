@@ -6,50 +6,69 @@ using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 using System.Data;
 using System.Windows.Forms;
-
-
-namespace QCM
+namespace WindowsFormsApp2
 {
-    public class Modele
+    class Modele
     {
-        private MySqlConnection myConnection;// objet de connexion
-        private bool connopen = false;// test si la connexion est faite
-        private bool chargement = false;// test si le chargement d'une requête est fait
+        private MySqlConnection myConnection; // objet de connexion 
+        private bool connopen = false; // test si la connexion est faite 
+        private bool chargement = false; // test si le chargement d'une requête est fait 
+                                         // collection de DataAdapter
+        private List<MySqlDataAdapter> dA = new List<MySqlDataAdapter>();
+
+        // collection de DataTable récupérant les données correspond au DA associé
+        private List<DataTable> dT = new List<DataTable>();
+        public List<MySqlDataAdapter> DA
+        {
+            get { return dA; }
+            set { dA = value; }
+        }
+
+        /// <summary>
+        /// Accesseur de la collection des DataTable
+        /// </summary>
+        public List<DataTable> DT
+        {
+            get { return dT; }
+            set { dT = value; }
+        }
         public Modele()
         {
-
+            // instanciation des collections des Datatable et DataAdapter
+            for (int i = 0; i < 6; i++)
+            {
+                dA.Add(new MySqlDataAdapter());
+                dT.Add(new DataTable());
+            }
         }
+
         public bool Connopen { get => connopen; set => connopen = value; }
         public bool Chargement { get => chargement; set => chargement = value; }
-        public DataTable DT1 { get => dT1; set => dT1 = value; }
-        public DataTable DT2 { get => dT1; set => dT1 = value; }
 
-        ///<summary>
-        /// Méthode pour se connecter à la BD
-        ///</summary>
+        /// <summary>         
+        /// Méthode pour se connecter à la BD         
+        /// </summary> 
         public void seconnecter()
         {
-            //paramètres de connexion à modifier selon sa BD et son serveur de BD
-            string myConnectionString = "Database=2021_slamBDD24;Data Source=192.168.10.70;UserID=2021_slamBDD24; Password=P@ssw0rd;";
+            // paramètres de connexion à modifier selon sa BD et son serveur de BD 
+            string myConnectionString = "Database=2021_slamBDD31;Data Source=192.168.10.70;User Id=2021_slamBDD31; Password = P@ssw0rd;";
             myConnection = new MySqlConnection(myConnectionString);
-            try // tentative
+            try // tentative   
+            { myConnection.Open(); connopen = true; }
+            catch (Exception err)// gestion des erreurs             
             {
-                myConnection.Open();
-                connopen = true;
-            }
-            catch (Exception err)// gestion des erreurs
-            {
-                MessageBox.Show("Erreur ouverture bdd :" + err, "PBS connection", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Erreur ouverture bdd : " + err, "PBS connection", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 connopen = false;
             }
         }
-        ///<summary>
-        /// Méthode pour se déconnecter de la BD
-        ///</summary>
+        /// <summary>        
+        /// Méthode pour se déconnecter de la BD         
+        /// </summary>   
         public void sedeconnecter()
         {
             if (!connopen)
                 return;
+
             try
             {
                 myConnection.Close();
@@ -58,48 +77,72 @@ namespace QCM
             }
             catch (Exception err)
             {
-                MessageBox.Show("Erreur fermeture bdd:" + err, "PBS déconnection", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
+                MessageBox.Show("Erreur fermeture bdd : " + err, "PBS deconnection", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        private DataTable dT1 = new DataTable();
-        /// <summary>
-        /// Méthode pour charger les données issues d'une requête dans un dataTable
-        /// </summary>
-        /// <param name="requete"></param>
-        /// <param name="DT1"></param>
-
-        private DataTable dT2 = new DataTable();
-        /// <summary>
-        /// Méthode pour charger les données issues d'une requête dans un dataTable
-        /// </summary>
-        /// <param name="requete"></param>
-        /// <param name="DT2"></param>
-        public void charger(string requete, DataTable dT1)
+        /// <summary>        
+        /// Méthode pout charger les données issues d'une requête dans un dataTable        
+        /// </summary>        
+        /// <param name="requete"></param>        
+        /// <param name="DT"></param>   
+        private void charger(string requete, DataTable DT, MySqlDataAdapter DA)
         {
-            MySqlCommand command = myConnection.CreateCommand();
-            MySqlDataReader reader;
+            DA.SelectCommand = new MySqlCommand(requete, myConnection);
 
+            // pour spécifier les instructions de mise à jour (insert, delete, update)
+            MySqlCommandBuilder CB1 = new MySqlCommandBuilder(DA);
             try
             {
-                command.CommandText = requete;
-                reader = command.ExecuteReader();
-                DT1.Load(reader);
+                DT.Clear();
+                DA.Fill(DT);
                 chargement = true;
             }
             catch (Exception err)
             {
-                MessageBox.Show("Erreur chargement DataTable:" + err, "Problemes table", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                chargement = false;
+                MessageBox.Show("Erreur chargement dataTable : " + err, "PBS table", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+        }
+        /// <summary>
+        /// Méthode qui permet d'ajouter un avatar avec son nom et son age 
+        /// </summary> 
+        /// <param name="n">nom</param>       
+        /// <param name="a">age</param>         
+        /// <returns></returns>   
+        public void charger_donnees(string table)
+        {
+            chargement = false;
+            if (!connopen) return;      // pour vérifier que la BD est bien ouverte
+                                        // charger plusieurs tables pour afficher dans le data table vus
+
+            if (table == "toutes")
+            {
+                charger("show tables;", dT[0], dA[0]);
+            }
+
+            if (table == "SLAM3_UILISATEUR")
+            {
+                charger("select * from SLAM3_UILISATEUR;", dT[1], dA[1]);
+            }
+            if (table == "SLAM3_THEME")
+            {
+                charger("select * from SLAM3_THEME;", dT[2], dA[2]);
+            }
+            if (table == "SLAM3_QCM")
+            {
+                charger("select * from SLAM3_QCM;", dT[3], dA[3]);
+            }
+            if (table == "SLAM3_REPONSE")
+            {
+                charger("select * from SLAM3_REPONSE;", dT[4], dA[4]);
+            }
+            if (table == "SLAM3_Question")
+            {
+                charger("select * from SLAM3_Question;", dT[5], dA[5]);
             }
 
         }
-        public void charger_donnees(string table)
-        {
-            if (table == "SLAM3_TP2_UTILISATEUR") charger("select * from SLAM3_TP2_UTILISATEUR;", dT1);
-            if (table == "SLAM3_TP2_ADMINISTRATEUR") charger("select * from SLAM3_TP2_ADMINISTRATEUR;", dT2);
-
-        }
-
     }
+
+
 }
