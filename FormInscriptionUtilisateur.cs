@@ -76,6 +76,14 @@ namespace QCM
                 }
                 else
                 {
+                    if(prenomUtilisateur.Text=="Facultatif")
+                    {
+                        prenomUtilisateur.Text = "";
+                    }
+                    if(nomUtilisateur.Text=="Facultatif")
+                    {
+                        nomUtilisateur.Text = "";
+                    }
                     NouvLigne["PRENOMUTILISATEUR"] = prenomUtilisateur.Text;
                     NouvLigne["NOMUTILISATEUR"] = nomUtilisateur.Text;
                     NouvLigne["LOGINUTILISATEUR"] = identifiantInscription.Text;
