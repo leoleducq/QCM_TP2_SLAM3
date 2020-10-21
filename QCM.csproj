@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A2137CB1-7F02-406B-9423-839C48033B7E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QCM</RootNamespace>
+    <AssemblyName>QCM</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.21.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controleur.cs" />
+    <Compile Include="FormInscriptionUtilisateur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInscriptionUtilisateur.Designer.cs">
+      <DependentUpon>FormInscriptionUtilisateur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConnexionUtilisateur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConnexionUtilisateur.Designer.cs">
+      <DependentUpon>FormConnexionUtilisateur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBienvenueQCM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBienvenueQCM.Designer.cs">
+      <DependentUpon>FormBienvenueQCM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChoixMode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChoixMode.Designer.cs">
+      <DependentUpon>FormChoixMode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConnexionAdministrateur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConnexionAdministrateur.Designer.cs">
+      <DependentUpon>FormConnexionAdministrateur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMaintenanceQCM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMaintenanceQCM.Designer.cs">
+      <DependentUpon>FormMaintenanceQCM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modele.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormConnexionUtilisateur.resx">
+      <DependentUpon>FormConnexionUtilisateur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBienvenueQCM.resx">
+      <DependentUpon>FormBienvenueQCM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChoixMode.resx">
+      <DependentUpon>FormChoixMode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConnexionAdministrateur.resx">
+      <DependentUpon>FormConnexionAdministrateur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInscriptionUtilisateur.resx">
+      <DependentUpon>FormInscriptionUtilisateur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMaintenanceQCM.resx">
+      <DependentUpon>FormMaintenanceQCM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
