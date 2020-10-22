@@ -140,7 +140,7 @@ namespace QCM
         private void prenomUtilisateur_Enter(object sender, EventArgs e)
         {
             string prenom = prenomUtilisateur.Text;
-            if (prenom.Trim().Equals("Facultatif"))
+            if (prenom.Trim()=="Facultatif")
             {
                 prenomUtilisateur.Text = "";
                 prenomUtilisateur.ForeColor = Color.Black;
@@ -150,7 +150,7 @@ namespace QCM
         private void prenomUtilisateur_Leave(object sender, EventArgs e)
         {
             string prenom = prenomUtilisateur.Text;
-            if (prenom.ToLower().Trim().Equals("Facultatif") || prenom.Trim().Equals(""))
+            if (prenom.ToLower().Trim()=="Facultatif" || prenom.Trim()=="")
             {
                 prenomUtilisateur.Text = "Facultatif";
                 prenomUtilisateur.ForeColor = Color.LightGray;

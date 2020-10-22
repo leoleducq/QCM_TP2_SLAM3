@@ -181,7 +181,7 @@
         private System.Windows.Forms.GroupBox gbTable;
         private System.Windows.Forms.ComboBox listeDeroulante;
         private System.Windows.Forms.Label labelcliquedroit;
-        private System.Windows.Forms.ContextMenuStrip Menu;
+        private new System.Windows.Forms.ContextMenuStrip Menu;
         private System.Windows.Forms.ToolStripMenuItem ajouterToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem modifierToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem supprimerToolStripMenuItem;
