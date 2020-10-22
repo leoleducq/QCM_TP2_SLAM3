@@ -45,7 +45,7 @@
             this.boutonQuitter4.Location = new System.Drawing.Point(51, 366);
             this.boutonQuitter4.Name = "boutonQuitter4";
             this.boutonQuitter4.Size = new System.Drawing.Size(128, 55);
-            this.boutonQuitter4.TabIndex = 19;
+            this.boutonQuitter4.TabIndex = 5;
             this.boutonQuitter4.Text = "QUITTER";
             this.boutonQuitter4.UseVisualStyleBackColor = true;
             this.boutonQuitter4.Click += new System.EventHandler(this.boutonQuitter4_Click);
@@ -56,7 +56,7 @@
             this.boutonValider4.Location = new System.Drawing.Point(626, 366);
             this.boutonValider4.Name = "boutonValider4";
             this.boutonValider4.Size = new System.Drawing.Size(128, 55);
-            this.boutonValider4.TabIndex = 18;
+            this.boutonValider4.TabIndex = 3;
             this.boutonValider4.Text = "VALIDER";
             this.boutonValider4.UseVisualStyleBackColor = true;
             this.boutonValider4.Click += new System.EventHandler(this.boutonValider4_Click);
@@ -67,7 +67,7 @@
             this.boutonAnnuler4.Location = new System.Drawing.Point(341, 366);
             this.boutonAnnuler4.Name = "boutonAnnuler4";
             this.boutonAnnuler4.Size = new System.Drawing.Size(128, 55);
-            this.boutonAnnuler4.TabIndex = 17;
+            this.boutonAnnuler4.TabIndex = 4;
             this.boutonAnnuler4.Text = "ANNULER";
             this.boutonAnnuler4.UseVisualStyleBackColor = true;
             this.boutonAnnuler4.Click += new System.EventHandler(this.boutonAnnuler4_Click);
@@ -79,7 +79,7 @@
             this.motdepasseadministrateur.Name = "motdepasseadministrateur";
             this.motdepasseadministrateur.PasswordChar = '*';
             this.motdepasseadministrateur.Size = new System.Drawing.Size(216, 29);
-            this.motdepasseadministrateur.TabIndex = 16;
+            this.motdepasseadministrateur.TabIndex = 2;
             // 
             // labelMotdepasse
             // 
@@ -118,7 +118,7 @@
             this.identifiantadministrateur.Location = new System.Drawing.Point(285, 139);
             this.identifiantadministrateur.Name = "identifiantadministrateur";
             this.identifiantadministrateur.Size = new System.Drawing.Size(216, 29);
-            this.identifiantadministrateur.TabIndex = 12;
+            this.identifiantadministrateur.TabIndex = 1;
             // 
             // boutonRevenir
             // 
@@ -126,12 +126,12 @@
             this.boutonRevenir.Location = new System.Drawing.Point(269, 71);
             this.boutonRevenir.Name = "boutonRevenir";
             this.boutonRevenir.Size = new System.Drawing.Size(246, 27);
-            this.boutonRevenir.TabIndex = 20;
+            this.boutonRevenir.TabIndex = 6;
             this.boutonRevenir.Text = "Revenir à la sélection du mode";
             this.boutonRevenir.UseVisualStyleBackColor = true;
             this.boutonRevenir.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Form4
+            // FormConnexionAdministrateur
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -145,7 +145,7 @@
             this.Controls.Add(this.labelIdentifiant);
             this.Controls.Add(this.pagedeconnexionadministrateur);
             this.Controls.Add(this.identifiantadministrateur);
-            this.Name = "Form4";
+            this.Name = "FormConnexionAdministrateur";
             this.Text = "Connexion Administrateur";
             this.Load += new System.EventHandler(this.Form4_Load);
             this.ResumeLayout(false);

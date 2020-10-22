@@ -45,7 +45,7 @@
             this.identifiant.Location = new System.Drawing.Point(296, 146);
             this.identifiant.Name = "identifiant";
             this.identifiant.Size = new System.Drawing.Size(216, 29);
-            this.identifiant.TabIndex = 2;
+            this.identifiant.TabIndex = 1;
             this.identifiant.TextChanged += new System.EventHandler(this.identifiant_TextChanged);
             // 
             // pagedeconnexion
@@ -87,7 +87,7 @@
             this.motdepasse.Name = "motdepasse";
             this.motdepasse.PasswordChar = '*';
             this.motdepasse.Size = new System.Drawing.Size(216, 29);
-            this.motdepasse.TabIndex = 8;
+            this.motdepasse.TabIndex = 2;
             // 
             // boutonAnnuler1
             // 
@@ -95,7 +95,7 @@
             this.boutonAnnuler1.Location = new System.Drawing.Point(352, 373);
             this.boutonAnnuler1.Name = "boutonAnnuler1";
             this.boutonAnnuler1.Size = new System.Drawing.Size(128, 55);
-            this.boutonAnnuler1.TabIndex = 9;
+            this.boutonAnnuler1.TabIndex = 4;
             this.boutonAnnuler1.Text = "ANNULER";
             this.boutonAnnuler1.UseVisualStyleBackColor = true;
             this.boutonAnnuler1.Click += new System.EventHandler(this.boutonAnnuler1_Click);
@@ -106,7 +106,7 @@
             this.boutonValider1.Location = new System.Drawing.Point(637, 373);
             this.boutonValider1.Name = "boutonValider1";
             this.boutonValider1.Size = new System.Drawing.Size(128, 55);
-            this.boutonValider1.TabIndex = 10;
+            this.boutonValider1.TabIndex = 3;
             this.boutonValider1.Text = "VALIDER";
             this.boutonValider1.UseVisualStyleBackColor = true;
             this.boutonValider1.Click += new System.EventHandler(this.boutonValider_Click);
@@ -117,7 +117,7 @@
             this.boutonQuitter1.Location = new System.Drawing.Point(62, 373);
             this.boutonQuitter1.Name = "boutonQuitter1";
             this.boutonQuitter1.Size = new System.Drawing.Size(128, 55);
-            this.boutonQuitter1.TabIndex = 11;
+            this.boutonQuitter1.TabIndex = 5;
             this.boutonQuitter1.Text = "QUITTER";
             this.boutonQuitter1.UseVisualStyleBackColor = true;
             this.boutonQuitter1.Click += new System.EventHandler(this.boutonQuitter1_Click);
@@ -128,12 +128,12 @@
             this.boutonRevenir.Location = new System.Drawing.Point(284, 72);
             this.boutonRevenir.Name = "boutonRevenir";
             this.boutonRevenir.Size = new System.Drawing.Size(246, 27);
-            this.boutonRevenir.TabIndex = 21;
+            this.boutonRevenir.TabIndex = 6;
             this.boutonRevenir.Text = "Revenir à la sélection du mode";
             this.boutonRevenir.UseVisualStyleBackColor = true;
             this.boutonRevenir.Click += new System.EventHandler(this.boutonRevenir_Click);
             // 
-            // Form1
+            // FormConnexionUtilisateur
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -147,7 +147,7 @@
             this.Controls.Add(this.labelIdentifiant);
             this.Controls.Add(this.pagedeconnexion);
             this.Controls.Add(this.identifiant);
-            this.Name = "Form1";
+            this.Name = "FormConnexionUtilisateur";
             this.Text = "Connexion Utilisateur";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);

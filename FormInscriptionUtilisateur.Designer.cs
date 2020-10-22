@@ -51,7 +51,7 @@
             this.boutonRevenir.Location = new System.Drawing.Point(273, 69);
             this.boutonRevenir.Name = "boutonRevenir";
             this.boutonRevenir.Size = new System.Drawing.Size(246, 27);
-            this.boutonRevenir.TabIndex = 30;
+            this.boutonRevenir.TabIndex = 9;
             this.boutonRevenir.Text = "Revenir à la sélection du mode";
             this.boutonRevenir.UseVisualStyleBackColor = true;
             this.boutonRevenir.Click += new System.EventHandler(this.boutonRevenir_Click);
@@ -62,7 +62,7 @@
             this.boutonQuitter1.Location = new System.Drawing.Point(51, 370);
             this.boutonQuitter1.Name = "boutonQuitter1";
             this.boutonQuitter1.Size = new System.Drawing.Size(128, 55);
-            this.boutonQuitter1.TabIndex = 29;
+            this.boutonQuitter1.TabIndex = 8;
             this.boutonQuitter1.Text = "QUITTER";
             this.boutonQuitter1.UseVisualStyleBackColor = true;
             this.boutonQuitter1.Click += new System.EventHandler(this.boutonQuitter1_Click);
@@ -73,7 +73,7 @@
             this.boutonValider1.Location = new System.Drawing.Point(626, 370);
             this.boutonValider1.Name = "boutonValider1";
             this.boutonValider1.Size = new System.Drawing.Size(128, 55);
-            this.boutonValider1.TabIndex = 28;
+            this.boutonValider1.TabIndex = 4;
             this.boutonValider1.Text = "VALIDER";
             this.boutonValider1.UseVisualStyleBackColor = true;
             this.boutonValider1.Click += new System.EventHandler(this.boutonValider1_Click);
@@ -84,7 +84,7 @@
             this.boutonAnnuler1.Location = new System.Drawing.Point(341, 370);
             this.boutonAnnuler1.Name = "boutonAnnuler1";
             this.boutonAnnuler1.Size = new System.Drawing.Size(128, 55);
-            this.boutonAnnuler1.TabIndex = 27;
+            this.boutonAnnuler1.TabIndex = 7;
             this.boutonAnnuler1.Text = "ANNULER";
             this.boutonAnnuler1.UseVisualStyleBackColor = true;
             this.boutonAnnuler1.Click += new System.EventHandler(this.boutonAnnuler1_Click);
@@ -126,7 +126,7 @@
             this.identifiantInscription.Location = new System.Drawing.Point(285, 196);
             this.identifiantInscription.Name = "identifiantInscription";
             this.identifiantInscription.Size = new System.Drawing.Size(216, 29);
-            this.identifiantInscription.TabIndex = 22;
+            this.identifiantInscription.TabIndex = 1;
             // 
             // motdepasseInscription
             // 
@@ -135,7 +135,7 @@
             this.motdepasseInscription.Name = "motdepasseInscription";
             this.motdepasseInscription.PasswordChar = '*';
             this.motdepasseInscription.Size = new System.Drawing.Size(216, 29);
-            this.motdepasseInscription.TabIndex = 26;
+            this.motdepasseInscription.TabIndex = 2;
             // 
             // label1
             // 
@@ -164,7 +164,7 @@
             this.prenomUtilisateur.Location = new System.Drawing.Point(285, 150);
             this.prenomUtilisateur.Name = "prenomUtilisateur";
             this.prenomUtilisateur.Size = new System.Drawing.Size(216, 29);
-            this.prenomUtilisateur.TabIndex = 33;
+            this.prenomUtilisateur.TabIndex = 6;
             this.prenomUtilisateur.Text = "Facultatif";
             this.prenomUtilisateur.Enter += new System.EventHandler(this.prenomUtilisateur_Enter);
             this.prenomUtilisateur.Leave += new System.EventHandler(this.prenomUtilisateur_Leave);
@@ -176,7 +176,7 @@
             this.nomUtilisateur.Location = new System.Drawing.Point(285, 102);
             this.nomUtilisateur.Name = "nomUtilisateur";
             this.nomUtilisateur.Size = new System.Drawing.Size(216, 29);
-            this.nomUtilisateur.TabIndex = 34;
+            this.nomUtilisateur.TabIndex = 5;
             this.nomUtilisateur.Text = "Facultatif";
             this.nomUtilisateur.Enter += new System.EventHandler(this.nomUtilisateur_Enter);
             this.nomUtilisateur.Leave += new System.EventHandler(this.nomUtilisateur_Leave);
@@ -198,7 +198,7 @@
             this.remotdepasseInscription.Name = "remotdepasseInscription";
             this.remotdepasseInscription.PasswordChar = '*';
             this.remotdepasseInscription.Size = new System.Drawing.Size(216, 29);
-            this.remotdepasseInscription.TabIndex = 36;
+            this.remotdepasseInscription.TabIndex = 3;
             // 
             // FormInscriptionUtilisateur
             // 

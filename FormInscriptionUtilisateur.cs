@@ -20,7 +20,7 @@ namespace QCM
 
         private void FormInscriptionUtilisateur_Load(object sender, EventArgs e)
         {
-
+            identifiantInscription.Focus();
         }
 
         private void boutonRevenir_Click(object sender, EventArgs e)
