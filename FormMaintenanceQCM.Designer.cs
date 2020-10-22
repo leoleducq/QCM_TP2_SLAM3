@@ -42,11 +42,11 @@
             this.pagedeconnexion.AutoSize = true;
             this.pagedeconnexion.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pagedeconnexion.ForeColor = System.Drawing.Color.Red;
-            this.pagedeconnexion.Location = new System.Drawing.Point(275, 9);
+            this.pagedeconnexion.Location = new System.Drawing.Point(285, 9);
             this.pagedeconnexion.Name = "pagedeconnexion";
-            this.pagedeconnexion.Size = new System.Drawing.Size(276, 31);
+            this.pagedeconnexion.Size = new System.Drawing.Size(256, 31);
             this.pagedeconnexion.TabIndex = 4;
-            this.pagedeconnexion.Text = "Maintenance du QCM";
+            this.pagedeconnexion.Text = "Administration QCM";
             // 
             // boutonRevenir
             // 
