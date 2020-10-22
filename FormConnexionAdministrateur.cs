@@ -48,7 +48,7 @@ namespace QCM
             {
                 if (identifiantadministrateur.Text == Controleur.Vmodele.DT[2].Rows[i]["LOGINADMINISTRATEUR"].ToString() && motdepasseadministrateur.Text == Controleur.Vmodele.DT[2].Rows[i]["MDPADMINISTRATEUR"].ToString())
                 {
-                    MessageBox.Show("Bienvenue dans le QCM " + " ", "Bienvenue", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    MessageBox.Show("Vous êtes en mode administrateur " + " ", "Administrateur", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     trouve = true;
                     this.Visible = false;
                     FormMaintenanceQCM form5 = new FormMaintenanceQCM();

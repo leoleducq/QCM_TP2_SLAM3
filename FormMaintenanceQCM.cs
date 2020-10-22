@@ -28,6 +28,8 @@ namespace QCM
         private void FormMaintenanceQCM_Load(object sender, EventArgs e)
         {
             dataGridView.Visible = false;
+            labelcliquedroit.Visible = false;
+            Menu.Enabled = false;
             Controleur.Vmodele.charger_donnees("toutes");
 
             if (Controleur.Vmodele.Chargement)
@@ -62,6 +64,8 @@ namespace QCM
                     }
                     dataGridView.Refresh();
                     dataGridView.Visible = true;
+                    labelcliquedroit.Visible = true;
+                    Menu.Enabled = true;
                 }
                 else
                 {
@@ -73,6 +77,16 @@ namespace QCM
             {
                 MessageBox.Show("Selectionner une table dans la liste déroulante", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void boutonSupprimer_Click(object sender, EventArgs e, int indice)
+        {
+            
         }
     }
 }

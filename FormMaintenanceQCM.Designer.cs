@@ -28,13 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.pagedeconnexion = new System.Windows.Forms.Label();
             this.boutonRevenir = new System.Windows.Forms.Button();
             this.dataGridView = new System.Windows.Forms.DataGridView();
             this.gbTable = new System.Windows.Forms.GroupBox();
             this.listeDeroulante = new System.Windows.Forms.ComboBox();
+            this.labelcliquedroit = new System.Windows.Forms.Label();
+            this.Menu = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.ajouterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.modifierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.supprimerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.gbTable.SuspendLayout();
+            this.Menu.SuspendLayout();
             this.SuspendLayout();
             // 
             // pagedeconnexion
@@ -64,7 +71,7 @@
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView.Location = new System.Drawing.Point(12, 139);
             this.dataGridView.Name = "dataGridView";
-            this.dataGridView.Size = new System.Drawing.Size(776, 299);
+            this.dataGridView.Size = new System.Drawing.Size(776, 254);
             this.dataGridView.TabIndex = 22;
             // 
             // gbTable
@@ -90,11 +97,50 @@
             this.listeDeroulante.TabIndex = 0;
             this.listeDeroulante.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
+            // labelcliquedroit
+            // 
+            this.labelcliquedroit.AutoSize = true;
+            this.labelcliquedroit.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelcliquedroit.Location = new System.Drawing.Point(91, 412);
+            this.labelcliquedroit.Name = "labelcliquedroit";
+            this.labelcliquedroit.Size = new System.Drawing.Size(621, 29);
+            this.labelcliquedroit.TabIndex = 25;
+            this.labelcliquedroit.Text = "Clique Droit pour Ajouter / Supprimer / Modifier une ligne";
+            // 
+            // Menu
+            // 
+            this.Menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ajouterToolStripMenuItem,
+            this.modifierToolStripMenuItem,
+            this.supprimerToolStripMenuItem});
+            this.Menu.Name = "Menu";
+            this.Menu.Size = new System.Drawing.Size(130, 70);
+            // 
+            // ajouterToolStripMenuItem
+            // 
+            this.ajouterToolStripMenuItem.Name = "ajouterToolStripMenuItem";
+            this.ajouterToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.ajouterToolStripMenuItem.Text = "Ajouter";
+            // 
+            // modifierToolStripMenuItem
+            // 
+            this.modifierToolStripMenuItem.Name = "modifierToolStripMenuItem";
+            this.modifierToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.modifierToolStripMenuItem.Text = "Modifier";
+            // 
+            // supprimerToolStripMenuItem
+            // 
+            this.supprimerToolStripMenuItem.Name = "supprimerToolStripMenuItem";
+            this.supprimerToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.supprimerToolStripMenuItem.Text = "Supprimer";
+            // 
             // FormMaintenanceQCM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ContextMenuStrip = this.Menu;
+            this.Controls.Add(this.labelcliquedroit);
             this.Controls.Add(this.gbTable);
             this.Controls.Add(this.dataGridView);
             this.Controls.Add(this.boutonRevenir);
@@ -104,6 +150,7 @@
             this.Load += new System.EventHandler(this.FormMaintenanceQCM_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.gbTable.ResumeLayout(false);
+            this.Menu.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -116,5 +163,10 @@
         private System.Windows.Forms.DataGridView dataGridView;
         private System.Windows.Forms.GroupBox gbTable;
         private System.Windows.Forms.ComboBox listeDeroulante;
+        private System.Windows.Forms.Label labelcliquedroit;
+        private System.Windows.Forms.ContextMenuStrip Menu;
+        private System.Windows.Forms.ToolStripMenuItem ajouterToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem modifierToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem supprimerToolStripMenuItem;
     }
 }
