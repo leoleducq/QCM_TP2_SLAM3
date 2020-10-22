@@ -47,11 +47,11 @@
             // pagedeconnexion
             // 
             this.pagedeconnexion.AutoSize = true;
-            this.pagedeconnexion.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pagedeconnexion.ForeColor = System.Drawing.Color.Red;
-            this.pagedeconnexion.Location = new System.Drawing.Point(285, 9);
+            this.pagedeconnexion.Font = new System.Drawing.Font("Perpetua Titling MT", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pagedeconnexion.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.pagedeconnexion.Location = new System.Drawing.Point(243, 8);
             this.pagedeconnexion.Name = "pagedeconnexion";
-            this.pagedeconnexion.Size = new System.Drawing.Size(256, 31);
+            this.pagedeconnexion.Size = new System.Drawing.Size(353, 32);
             this.pagedeconnexion.TabIndex = 4;
             this.pagedeconnexion.Text = "Administration QCM";
             // 
@@ -68,6 +68,7 @@
             // 
             // dataGridView
             // 
+            this.dataGridView.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView.Location = new System.Drawing.Point(12, 139);
             this.dataGridView.Name = "dataGridView";
@@ -78,7 +79,7 @@
             // 
             this.gbTable.Controls.Add(this.listeDeroulante);
             this.gbTable.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbTable.ForeColor = System.Drawing.Color.Red;
+            this.gbTable.ForeColor = System.Drawing.Color.Sienna;
             this.gbTable.Location = new System.Drawing.Point(249, 76);
             this.gbTable.Name = "gbTable";
             this.gbTable.Size = new System.Drawing.Size(317, 59);
@@ -138,6 +139,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.ContextMenuStrip = this.Menu;
             this.Controls.Add(this.labelcliquedroit);
@@ -157,8 +159,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label pagedeconnexion;
         private System.Windows.Forms.Button boutonRevenir;
         private System.Windows.Forms.DataGridView dataGridView;
         private System.Windows.Forms.GroupBox gbTable;
@@ -168,5 +168,6 @@
         private System.Windows.Forms.ToolStripMenuItem ajouterToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem modifierToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem supprimerToolStripMenuItem;
+        private System.Windows.Forms.Label pagedeconnexion;
     }
 }
