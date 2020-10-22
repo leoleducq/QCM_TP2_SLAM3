@@ -35,7 +35,7 @@ namespace QCM
         public Modele()
         {
             // instanciation des collections des Datatable et DataAdapter
-            for (int i = 0; i < 7; i++)
+            for (int i = 0; i < 8; i++)
             {
                 dA.Add(new MySqlDataAdapter());
                 dT.Add(new DataTable());
