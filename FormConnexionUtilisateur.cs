@@ -43,7 +43,7 @@ namespace QCM
                     MessageBox.Show("Bienvenue dans le QCM " + " ", "Bienvenue", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     trouve = true;
                     this.Visible = false;
-                    FormBienvenueQCM form2 = new FormBienvenueQCM();
+                    FormChoixNiveau form2 = new FormChoixNiveau();
                     form2.Show();
                 }
 

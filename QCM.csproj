@@ -48,6 +48,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controleur.cs" />
+    <Compile Include="FormChoixTheme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChoixTheme.Designer.cs">
+      <DependentUpon>FormChoixTheme.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormInscriptionUtilisateur.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,11 +66,11 @@
     <Compile Include="FormConnexionUtilisateur.Designer.cs">
       <DependentUpon>FormConnexionUtilisateur.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormBienvenueQCM.cs">
+    <Compile Include="FormChoixNiveau.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormBienvenueQCM.Designer.cs">
-      <DependentUpon>FormBienvenueQCM.cs</DependentUpon>
+    <Compile Include="FormChoixNiveau.Designer.cs">
+      <DependentUpon>FormChoixNiveau.cs</DependentUpon>
     </Compile>
     <Compile Include="FormChoixMode.cs">
       <SubType>Form</SubType>
@@ -87,11 +93,14 @@
     <Compile Include="Modele.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormChoixTheme.resx">
+      <DependentUpon>FormChoixTheme.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormConnexionUtilisateur.resx">
       <DependentUpon>FormConnexionUtilisateur.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormBienvenueQCM.resx">
-      <DependentUpon>FormBienvenueQCM.cs</DependentUpon>
+    <EmbeddedResource Include="FormChoixNiveau.resx">
+      <DependentUpon>FormChoixNiveau.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormChoixMode.resx">
       <DependentUpon>FormChoixMode.cs</DependentUpon>
