@@ -39,17 +39,19 @@
             this.ajouterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.modifierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.supprimerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.gbTable.SuspendLayout();
             this.Menu.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pagedeconnexion
             // 
             this.pagedeconnexion.AutoSize = true;
             this.pagedeconnexion.Font = new System.Drawing.Font("Perpetua Titling MT", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pagedeconnexion.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.pagedeconnexion.Location = new System.Drawing.Point(243, 8);
+            this.pagedeconnexion.ForeColor = System.Drawing.Color.Gold;
+            this.pagedeconnexion.Location = new System.Drawing.Point(232, 8);
             this.pagedeconnexion.Name = "pagedeconnexion";
             this.pagedeconnexion.Size = new System.Drawing.Size(353, 32);
             this.pagedeconnexion.TabIndex = 4;
@@ -57,29 +59,31 @@
             // 
             // boutonRevenir
             // 
+            this.boutonRevenir.BackColor = System.Drawing.Color.LightGray;
             this.boutonRevenir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.boutonRevenir.Location = new System.Drawing.Point(291, 43);
             this.boutonRevenir.Name = "boutonRevenir";
             this.boutonRevenir.Size = new System.Drawing.Size(246, 27);
             this.boutonRevenir.TabIndex = 21;
             this.boutonRevenir.Text = "Revenir à la sélection du mode";
-            this.boutonRevenir.UseVisualStyleBackColor = true;
+            this.boutonRevenir.UseVisualStyleBackColor = false;
             this.boutonRevenir.Click += new System.EventHandler(this.boutonRevenir_Click);
             // 
             // dataGridView
             // 
             this.dataGridView.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
+            this.dataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView.Location = new System.Drawing.Point(12, 139);
+            this.dataGridView.Location = new System.Drawing.Point(16, 11);
             this.dataGridView.Name = "dataGridView";
-            this.dataGridView.Size = new System.Drawing.Size(776, 254);
+            this.dataGridView.Size = new System.Drawing.Size(741, 241);
             this.dataGridView.TabIndex = 22;
             // 
             // gbTable
             // 
             this.gbTable.Controls.Add(this.listeDeroulante);
             this.gbTable.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbTable.ForeColor = System.Drawing.Color.Sienna;
+            this.gbTable.ForeColor = System.Drawing.Color.Goldenrod;
             this.gbTable.Location = new System.Drawing.Point(249, 76);
             this.gbTable.Name = "gbTable";
             this.gbTable.Size = new System.Drawing.Size(317, 59);
@@ -101,7 +105,9 @@
             // labelcliquedroit
             // 
             this.labelcliquedroit.AutoSize = true;
+            this.labelcliquedroit.BackColor = System.Drawing.Color.Black;
             this.labelcliquedroit.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelcliquedroit.ForeColor = System.Drawing.Color.White;
             this.labelcliquedroit.Location = new System.Drawing.Point(91, 412);
             this.labelcliquedroit.Name = "labelcliquedroit";
             this.labelcliquedroit.Size = new System.Drawing.Size(621, 29);
@@ -135,6 +141,16 @@
             this.supprimerToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.supprimerToolStripMenuItem.Text = "Supprimer";
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.LightGray;
+            this.panel1.Controls.Add(this.dataGridView);
+            this.panel1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.panel1.Location = new System.Drawing.Point(12, 141);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(776, 268);
+            this.panel1.TabIndex = 26;
+            // 
             // FormMaintenanceQCM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -142,9 +158,9 @@
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.ContextMenuStrip = this.Menu;
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.labelcliquedroit);
             this.Controls.Add(this.gbTable);
-            this.Controls.Add(this.dataGridView);
             this.Controls.Add(this.boutonRevenir);
             this.Controls.Add(this.pagedeconnexion);
             this.Name = "FormMaintenanceQCM";
@@ -153,6 +169,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.gbTable.ResumeLayout(false);
             this.Menu.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -169,5 +186,6 @@
         private System.Windows.Forms.ToolStripMenuItem modifierToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem supprimerToolStripMenuItem;
         private System.Windows.Forms.Label pagedeconnexion;
+        private System.Windows.Forms.Panel panel1;
     }
 }
