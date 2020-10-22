@@ -124,25 +124,29 @@ namespace QCM
             {
                 charger("select * from SLAM3_TP2_UTILISATEUR;", dT[1], dA[1]);
             }
+            if(table == "SLAM3_TP2_ADMINISTRATEUR")
+            {
+                charger("select * from SLAM3_TP2_ADMINISTRATEUR;", dT[2], dA[2]);
+            }
             if (table == "SLAM3_TP2_THEME")
             {
-                charger("select * from SLAM3_TP2_THEME;", dT[2], dA[2]);
+                charger("select * from SLAM3_TP2_THEME;", dT[3], dA[3]);
             }
             if (table == "SLAM3_TP2_QCM")
             {
-                charger("select * from SLAM3_TP2_QCM;", dT[3], dA[3]);
+                charger("select * from SLAM3_TP2_QCM;", dT[4], dA[4]);
             }
             if(table == "SLAM3_TP2_QUESTIONS")
             {
-                charger("select * from SLAM3_TP2_QUESTIONS;", dT[4], dA[4]);
+                charger("select * from SLAM3_TP2_QUESTIONS;", dT[5], dA[5]);
             }
             if (table == "SLAM3_TP2_REPONSEQUESTION")
             {
-                charger("select * from SLAM3_TP2_REPONSEQUESTION;", dT[5], dA[5]);
+                charger("select * from SLAM3_TP2_REPONSEQUESTION;", dT[6], dA[6]);
             }
             if (table == "SLAM3_TP2_REPONSEUTILISATEUR")
             {
-                charger("select * from SLAM3_TP2_REPONSEUTILISATEUR;", dT[6], dA[6]);
+                charger("select * from SLAM3_TP2_REPONSEUTILISATEUR;", dT[7], dA[7]);
             }
 
         }
