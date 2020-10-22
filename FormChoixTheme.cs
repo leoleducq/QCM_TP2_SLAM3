@@ -36,5 +36,18 @@ namespace QCM
             FormChoixNiveau form2 = new FormChoixNiveau();
             form2.Show();
         }
+
+        private void FormChoixTheme_Load(object sender, EventArgs e)
+        {
+            Controleur.Vmodele.charger_donnees("SLAM3_TP2_THEME");
+            if (Controleur.Vmodele.Chargement)
+            {
+                //   MessageBox.Show("BD chargée dans DataTable  : " + Controleur.Vmodele.DT1.Rows.Count.ToString());
+                for (int i = 0; i < Controleur.Vmodele.DT[0].Rows.Count; i++)
+                {
+                    listeDeroulante.Items.Add(Controleur.Vmodele.DT[3].Rows[i][3].ToString());
+                }
+            }
+        }
     }
 }

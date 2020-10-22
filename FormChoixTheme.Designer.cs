@@ -115,6 +115,7 @@
             this.Controls.Add(this.labelChoixTheme);
             this.Name = "FormChoixTheme";
             this.Text = "FormChoixTheme";
+            this.Load += new System.EventHandler(this.FormChoixTheme_Load);
             this.gbTable.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
