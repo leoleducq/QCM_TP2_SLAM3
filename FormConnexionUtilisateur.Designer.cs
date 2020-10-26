@@ -42,7 +42,7 @@
             // identifiant
             // 
             this.identifiant.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.identifiant.Location = new System.Drawing.Point(296, 146);
+            this.identifiant.Location = new System.Drawing.Point(300, 147);
             this.identifiant.Name = "identifiant";
             this.identifiant.Size = new System.Drawing.Size(216, 29);
             this.identifiant.TabIndex = 1;
@@ -51,11 +51,11 @@
             // pagedeconnexion
             // 
             this.pagedeconnexion.AutoSize = true;
-            this.pagedeconnexion.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pagedeconnexion.ForeColor = System.Drawing.Color.Red;
-            this.pagedeconnexion.Location = new System.Drawing.Point(239, 28);
+            this.pagedeconnexion.Font = new System.Drawing.Font("Perpetua Titling MT", 20.25F, System.Drawing.FontStyle.Bold);
+            this.pagedeconnexion.ForeColor = System.Drawing.Color.Gold;
+            this.pagedeconnexion.Location = new System.Drawing.Point(164, 28);
             this.pagedeconnexion.Name = "pagedeconnexion";
-            this.pagedeconnexion.Size = new System.Drawing.Size(373, 31);
+            this.pagedeconnexion.Size = new System.Drawing.Size(528, 32);
             this.pagedeconnexion.TabIndex = 3;
             this.pagedeconnexion.Text = "Page de connexion Utilisateur";
             this.pagedeconnexion.Click += new System.EventHandler(this.label1_Click);
@@ -64,6 +64,7 @@
             // 
             this.labelIdentifiant.AutoSize = true;
             this.labelIdentifiant.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelIdentifiant.ForeColor = System.Drawing.Color.White;
             this.labelIdentifiant.Location = new System.Drawing.Point(99, 146);
             this.labelIdentifiant.Name = "labelIdentifiant";
             this.labelIdentifiant.Size = new System.Drawing.Size(128, 29);
@@ -74,6 +75,7 @@
             // 
             this.labelMotdepasse.AutoSize = true;
             this.labelMotdepasse.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMotdepasse.ForeColor = System.Drawing.Color.White;
             this.labelMotdepasse.Location = new System.Drawing.Point(57, 218);
             this.labelMotdepasse.Name = "labelMotdepasse";
             this.labelMotdepasse.Size = new System.Drawing.Size(170, 29);
@@ -83,7 +85,7 @@
             // motdepasse
             // 
             this.motdepasse.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.motdepasse.Location = new System.Drawing.Point(296, 219);
+            this.motdepasse.Location = new System.Drawing.Point(300, 220);
             this.motdepasse.Name = "motdepasse";
             this.motdepasse.PasswordChar = '*';
             this.motdepasse.Size = new System.Drawing.Size(216, 29);
@@ -91,10 +93,11 @@
             // 
             // boutonAnnuler1
             // 
-            this.boutonAnnuler1.ForeColor = System.Drawing.Color.Red;
-            this.boutonAnnuler1.Location = new System.Drawing.Point(352, 373);
+            this.boutonAnnuler1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.boutonAnnuler1.ForeColor = System.Drawing.Color.Black;
+            this.boutonAnnuler1.Location = new System.Drawing.Point(344, 377);
             this.boutonAnnuler1.Name = "boutonAnnuler1";
-            this.boutonAnnuler1.Size = new System.Drawing.Size(128, 55);
+            this.boutonAnnuler1.Size = new System.Drawing.Size(128, 36);
             this.boutonAnnuler1.TabIndex = 4;
             this.boutonAnnuler1.Text = "ANNULER";
             this.boutonAnnuler1.UseVisualStyleBackColor = true;
@@ -102,10 +105,11 @@
             // 
             // boutonValider1
             // 
-            this.boutonValider1.ForeColor = System.Drawing.Color.Red;
-            this.boutonValider1.Location = new System.Drawing.Point(637, 373);
+            this.boutonValider1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.boutonValider1.ForeColor = System.Drawing.Color.Black;
+            this.boutonValider1.Location = new System.Drawing.Point(629, 377);
             this.boutonValider1.Name = "boutonValider1";
-            this.boutonValider1.Size = new System.Drawing.Size(128, 55);
+            this.boutonValider1.Size = new System.Drawing.Size(128, 36);
             this.boutonValider1.TabIndex = 3;
             this.boutonValider1.Text = "VALIDER";
             this.boutonValider1.UseVisualStyleBackColor = true;
@@ -113,10 +117,11 @@
             // 
             // boutonQuitter1
             // 
-            this.boutonQuitter1.ForeColor = System.Drawing.Color.Red;
-            this.boutonQuitter1.Location = new System.Drawing.Point(62, 373);
+            this.boutonQuitter1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.boutonQuitter1.ForeColor = System.Drawing.Color.Black;
+            this.boutonQuitter1.Location = new System.Drawing.Point(54, 377);
             this.boutonQuitter1.Name = "boutonQuitter1";
-            this.boutonQuitter1.Size = new System.Drawing.Size(128, 55);
+            this.boutonQuitter1.Size = new System.Drawing.Size(128, 36);
             this.boutonQuitter1.TabIndex = 5;
             this.boutonQuitter1.Text = "QUITTER";
             this.boutonQuitter1.UseVisualStyleBackColor = true;
@@ -137,6 +142,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(809, 450);
             this.Controls.Add(this.boutonRevenir);
             this.Controls.Add(this.boutonQuitter1);

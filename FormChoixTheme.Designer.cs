@@ -40,7 +40,9 @@
             // labelChoixTheme
             // 
             this.labelChoixTheme.AutoSize = true;
+            this.labelChoixTheme.BackColor = System.Drawing.Color.Black;
             this.labelChoixTheme.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelChoixTheme.ForeColor = System.Drawing.Color.White;
             this.labelChoixTheme.Location = new System.Drawing.Point(273, 164);
             this.labelChoixTheme.Name = "labelChoixTheme";
             this.labelChoixTheme.Size = new System.Drawing.Size(247, 29);
@@ -50,7 +52,7 @@
             // boutonRevenir
             // 
             this.boutonRevenir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.boutonRevenir.Location = new System.Drawing.Point(274, 54);
+            this.boutonRevenir.Location = new System.Drawing.Point(148, 74);
             this.boutonRevenir.Name = "boutonRevenir";
             this.boutonRevenir.Size = new System.Drawing.Size(246, 27);
             this.boutonRevenir.TabIndex = 18;
@@ -61,18 +63,18 @@
             // labelBienvenue
             // 
             this.labelBienvenue.AutoSize = true;
-            this.labelBienvenue.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelBienvenue.ForeColor = System.Drawing.Color.Red;
-            this.labelBienvenue.Location = new System.Drawing.Point(265, 22);
+            this.labelBienvenue.Font = new System.Drawing.Font("Perpetua Titling MT", 20.25F, System.Drawing.FontStyle.Bold);
+            this.labelBienvenue.ForeColor = System.Drawing.Color.Gold;
+            this.labelBienvenue.Location = new System.Drawing.Point(225, 23);
             this.labelBienvenue.Name = "labelBienvenue";
-            this.labelBienvenue.Size = new System.Drawing.Size(273, 29);
+            this.labelBienvenue.Size = new System.Drawing.Size(388, 32);
             this.labelBienvenue.TabIndex = 19;
             this.labelBienvenue.Text = "Bienvenue dans le QCM";
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(274, 128);
+            this.button1.Location = new System.Drawing.Point(400, 74);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(246, 27);
             this.button1.TabIndex = 20;
@@ -107,6 +109,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.gbTable);
             this.Controls.Add(this.button1);

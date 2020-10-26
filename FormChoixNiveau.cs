@@ -47,7 +47,7 @@ namespace QCM
 
         private void button1_Click(object sender, EventArgs e)
         {
-            niveau = "Facile";
+            niveau = "Débutant";
             MessageBox.Show("Vous avez choisi la difficulté : " + niveau);
             this.Visible = false;
             FormChoixTheme form7 = new FormChoixTheme();
@@ -56,7 +56,7 @@ namespace QCM
 
         private void button2_Click(object sender, EventArgs e)
         {
-            niveau = "Moyen";
+            niveau = "Confirmé";
             MessageBox.Show("Vous avez choisi la difficulté : " + niveau);
             this.Visible = false;
             FormChoixTheme form7 = new FormChoixTheme();
@@ -65,7 +65,7 @@ namespace QCM
 
         private void button3_Click(object sender, EventArgs e)
         {
-            niveau = "Difficile";
+            niveau = "Expert";
             MessageBox.Show("Vous avez choisi la difficulté : " + niveau);
             this.Visible = false;
             FormChoixTheme form7 = new FormChoixTheme();

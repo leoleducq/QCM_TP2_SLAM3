@@ -58,10 +58,11 @@
             // 
             // boutonQuitter1
             // 
-            this.boutonQuitter1.ForeColor = System.Drawing.Color.Red;
+            this.boutonQuitter1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.boutonQuitter1.ForeColor = System.Drawing.Color.Black;
             this.boutonQuitter1.Location = new System.Drawing.Point(51, 370);
             this.boutonQuitter1.Name = "boutonQuitter1";
-            this.boutonQuitter1.Size = new System.Drawing.Size(128, 55);
+            this.boutonQuitter1.Size = new System.Drawing.Size(128, 36);
             this.boutonQuitter1.TabIndex = 8;
             this.boutonQuitter1.Text = "QUITTER";
             this.boutonQuitter1.UseVisualStyleBackColor = true;
@@ -69,10 +70,11 @@
             // 
             // boutonValider1
             // 
-            this.boutonValider1.ForeColor = System.Drawing.Color.Red;
+            this.boutonValider1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.boutonValider1.ForeColor = System.Drawing.Color.Black;
             this.boutonValider1.Location = new System.Drawing.Point(626, 370);
             this.boutonValider1.Name = "boutonValider1";
-            this.boutonValider1.Size = new System.Drawing.Size(128, 55);
+            this.boutonValider1.Size = new System.Drawing.Size(128, 36);
             this.boutonValider1.TabIndex = 4;
             this.boutonValider1.Text = "VALIDER";
             this.boutonValider1.UseVisualStyleBackColor = true;
@@ -80,10 +82,11 @@
             // 
             // boutonAnnuler1
             // 
-            this.boutonAnnuler1.ForeColor = System.Drawing.Color.Red;
+            this.boutonAnnuler1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.boutonAnnuler1.ForeColor = System.Drawing.Color.Black;
             this.boutonAnnuler1.Location = new System.Drawing.Point(341, 370);
             this.boutonAnnuler1.Name = "boutonAnnuler1";
-            this.boutonAnnuler1.Size = new System.Drawing.Size(128, 55);
+            this.boutonAnnuler1.Size = new System.Drawing.Size(128, 36);
             this.boutonAnnuler1.TabIndex = 7;
             this.boutonAnnuler1.Text = "ANNULER";
             this.boutonAnnuler1.UseVisualStyleBackColor = true;
@@ -92,11 +95,11 @@
             // pagedeconnexion
             // 
             this.pagedeconnexion.AutoSize = true;
-            this.pagedeconnexion.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pagedeconnexion.ForeColor = System.Drawing.Color.Red;
-            this.pagedeconnexion.Location = new System.Drawing.Point(228, 25);
+            this.pagedeconnexion.Font = new System.Drawing.Font("Perpetua Titling MT", 20.25F, System.Drawing.FontStyle.Bold);
+            this.pagedeconnexion.ForeColor = System.Drawing.Color.Gold;
+            this.pagedeconnexion.Location = new System.Drawing.Point(135, 25);
             this.pagedeconnexion.Name = "pagedeconnexion";
-            this.pagedeconnexion.Size = new System.Drawing.Size(356, 31);
+            this.pagedeconnexion.Size = new System.Drawing.Size(517, 32);
             this.pagedeconnexion.TabIndex = 23;
             this.pagedeconnexion.Text = "Page d\'inscription Utilisateur";
             // 
@@ -104,7 +107,8 @@
             // 
             this.labelIdentifiant.AutoSize = true;
             this.labelIdentifiant.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelIdentifiant.Location = new System.Drawing.Point(146, 196);
+            this.labelIdentifiant.ForeColor = System.Drawing.Color.White;
+            this.labelIdentifiant.Location = new System.Drawing.Point(164, 208);
             this.labelIdentifiant.Name = "labelIdentifiant";
             this.labelIdentifiant.Size = new System.Drawing.Size(128, 29);
             this.labelIdentifiant.TabIndex = 24;
@@ -114,7 +118,8 @@
             // 
             this.labelMotdepasse.AutoSize = true;
             this.labelMotdepasse.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMotdepasse.Location = new System.Drawing.Point(104, 239);
+            this.labelMotdepasse.ForeColor = System.Drawing.Color.White;
+            this.labelMotdepasse.Location = new System.Drawing.Point(122, 251);
             this.labelMotdepasse.Name = "labelMotdepasse";
             this.labelMotdepasse.Size = new System.Drawing.Size(170, 29);
             this.labelMotdepasse.TabIndex = 25;
@@ -123,7 +128,7 @@
             // identifiantInscription
             // 
             this.identifiantInscription.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.identifiantInscription.Location = new System.Drawing.Point(285, 196);
+            this.identifiantInscription.Location = new System.Drawing.Point(303, 208);
             this.identifiantInscription.Name = "identifiantInscription";
             this.identifiantInscription.Size = new System.Drawing.Size(216, 29);
             this.identifiantInscription.TabIndex = 1;
@@ -131,7 +136,7 @@
             // motdepasseInscription
             // 
             this.motdepasseInscription.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.motdepasseInscription.Location = new System.Drawing.Point(285, 240);
+            this.motdepasseInscription.Location = new System.Drawing.Point(303, 252);
             this.motdepasseInscription.Name = "motdepasseInscription";
             this.motdepasseInscription.PasswordChar = '*';
             this.motdepasseInscription.Size = new System.Drawing.Size(216, 29);
@@ -141,7 +146,8 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(164, 149);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(182, 161);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(110, 29);
             this.label1.TabIndex = 31;
@@ -151,7 +157,8 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(197, 101);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(215, 113);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(77, 29);
             this.label2.TabIndex = 32;
@@ -160,24 +167,26 @@
             // prenomUtilisateur
             // 
             this.prenomUtilisateur.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.prenomUtilisateur.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.prenomUtilisateur.Location = new System.Drawing.Point(285, 150);
+            this.prenomUtilisateur.ForeColor = System.Drawing.Color.Goldenrod;
+            this.prenomUtilisateur.Location = new System.Drawing.Point(303, 162);
             this.prenomUtilisateur.Name = "prenomUtilisateur";
             this.prenomUtilisateur.Size = new System.Drawing.Size(216, 29);
             this.prenomUtilisateur.TabIndex = 6;
             this.prenomUtilisateur.Text = "Facultatif";
+            this.prenomUtilisateur.TextChanged += new System.EventHandler(this.prenomUtilisateur_TextChanged);
             this.prenomUtilisateur.Enter += new System.EventHandler(this.prenomUtilisateur_Enter);
             this.prenomUtilisateur.Leave += new System.EventHandler(this.prenomUtilisateur_Leave);
             // 
             // nomUtilisateur
             // 
             this.nomUtilisateur.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nomUtilisateur.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.nomUtilisateur.Location = new System.Drawing.Point(285, 102);
+            this.nomUtilisateur.ForeColor = System.Drawing.Color.Goldenrod;
+            this.nomUtilisateur.Location = new System.Drawing.Point(303, 114);
             this.nomUtilisateur.Name = "nomUtilisateur";
             this.nomUtilisateur.Size = new System.Drawing.Size(216, 29);
             this.nomUtilisateur.TabIndex = 5;
             this.nomUtilisateur.Text = "Facultatif";
+            this.nomUtilisateur.TextChanged += new System.EventHandler(this.nomUtilisateur_TextChanged);
             this.nomUtilisateur.Enter += new System.EventHandler(this.nomUtilisateur_Enter);
             this.nomUtilisateur.Leave += new System.EventHandler(this.nomUtilisateur_Leave);
             // 
@@ -185,16 +194,17 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(12, 284);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(39, 296);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(262, 29);
+            this.label3.Size = new System.Drawing.Size(253, 29);
             this.label3.TabIndex = 35;
-            this.label3.Text = "Retaper mot de passe :";
+            this.label3.Text = "Vérifier mot de passe :";
             // 
             // remotdepasseInscription
             // 
             this.remotdepasseInscription.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.remotdepasseInscription.Location = new System.Drawing.Point(285, 285);
+            this.remotdepasseInscription.Location = new System.Drawing.Point(303, 297);
             this.remotdepasseInscription.Name = "remotdepasseInscription";
             this.remotdepasseInscription.PasswordChar = '*';
             this.remotdepasseInscription.Size = new System.Drawing.Size(216, 29);
@@ -204,6 +214,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.remotdepasseInscription);
             this.Controls.Add(this.label3);

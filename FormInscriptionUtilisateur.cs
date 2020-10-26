@@ -133,7 +133,7 @@ namespace QCM
             if (nom.ToLower().Trim()=="Facultatif" || nom.Trim()=="")
             {
                 nomUtilisateur.Text = "Facultatif";
-                nomUtilisateur.ForeColor = Color.LightGray;
+                nomUtilisateur.ForeColor = Color.Goldenrod;
             }
         }
 
@@ -153,8 +153,18 @@ namespace QCM
             if (prenom.ToLower().Trim()=="Facultatif" || prenom.Trim()=="")
             {
                 prenomUtilisateur.Text = "Facultatif";
-                prenomUtilisateur.ForeColor = Color.LightGray;
+                prenomUtilisateur.ForeColor = Color.Goldenrod;
             }
+        }
+
+        private void nomUtilisateur_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void prenomUtilisateur_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
