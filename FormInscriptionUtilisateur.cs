@@ -38,9 +38,9 @@ namespace QCM
         private void boutonAnnuler1_Click(object sender, EventArgs e)
         {
             nomUtilisateur.Text="Facultatif";
-            nomUtilisateur.ForeColor = Color.LightGray;
+            nomUtilisateur.ForeColor = Color.Goldenrod;
             prenomUtilisateur.Text="Facultatif";
-            prenomUtilisateur.ForeColor = Color.LightGray;
+            prenomUtilisateur.ForeColor = Color.Goldenrod;
             identifiantInscription.Clear();
             motdepasseInscription.Clear();
             remotdepasseInscription.Clear();
