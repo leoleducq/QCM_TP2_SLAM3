@@ -62,6 +62,23 @@ namespace QCM
                         dataGridView.Columns["LOGINUTILISATEUR"].HeaderText = "Identifiant";
                         dataGridView.Columns["MDPUTILISATEUR"].HeaderText = "Mot de passe";
                     }
+                    else if(table =="SLAM3_TP2_ADMINISTRATEUR")
+                    {
+                        bindingSource1.DataSource = Controleur.Vmodele.DT[2];
+                        dataGridView.DataSource = bindingSource1;
+                        dataGridView.Columns["IDADMINISTRATEUR"].HeaderText = "Numéro";
+                        dataGridView.Columns["NOMADMINISTRATEUR"].HeaderText = "Nom";
+                        dataGridView.Columns["PRENOMADMINISTRATEURR"].HeaderText = "Prénom";
+                        dataGridView.Columns["LOGINADMINISTRATEUR"].HeaderText = "Identifiant";
+                        dataGridView.Columns["MDPADMINISTRATEUR"].HeaderText = "Mot de passe";
+                    }
+                    else if(table == "SLAM3_TP2_THEME")
+                    {
+                        bindingSource1.DataSource = Controleur.Vmodele.DT[3];
+                        dataGridView.DataSource = bindingSource1;
+                        dataGridView.Columns["IDTHEME"].HeaderText = "Numéro";
+                        dataGridView.Columns["LIBELLETHEME"].HeaderText = "Nom";
+                    }
                     dataGridView.Refresh();
                     dataGridView.Visible = true;
                     labelcliquedroit.Visible = true;
