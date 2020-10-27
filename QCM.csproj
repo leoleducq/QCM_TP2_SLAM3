@@ -90,6 +90,12 @@
     <Compile Include="FormMaintenanceQCM.Designer.cs">
       <DependentUpon>FormMaintenanceQCM.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormQCM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormQCM.Designer.cs">
+      <DependentUpon>FormQCM.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modele.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -113,6 +119,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormMaintenanceQCM.resx">
       <DependentUpon>FormMaintenanceQCM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormQCM.resx">
+      <DependentUpon>FormQCM.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
