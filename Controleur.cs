@@ -14,6 +14,8 @@ namespace QCM
         {
             vmodele = new Modele();
         }
+
+        public static string niveau;
         
     }
 }
