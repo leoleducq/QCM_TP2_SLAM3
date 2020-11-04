@@ -12,7 +12,6 @@ namespace QCM
 {
     public partial class FormChoixNiveau : Form
     {
-        string niveau = "";
         public FormChoixNiveau()
         {
             InitializeComponent();
@@ -47,8 +46,8 @@ namespace QCM
 
         private void button1_Click(object sender, EventArgs e)
         {
-            niveau = "Débutant";
-            MessageBox.Show("Vous avez choisi la difficulté : " + niveau);
+            Controleur.niveau = "Débutant";
+            MessageBox.Show("Vous avez choisi la difficulté : " + Controleur.niveau);
             this.Visible = false;
             FormChoixTheme form7 = new FormChoixTheme();
             form7.Show();
@@ -56,8 +55,8 @@ namespace QCM
 
         private void button2_Click(object sender, EventArgs e)
         {
-            niveau = "Confirmé";
-            MessageBox.Show("Vous avez choisi la difficulté : " + niveau);
+            Controleur.niveau = "Confirmé";
+            MessageBox.Show("Vous avez choisi la difficulté : " + Controleur.niveau);
             this.Visible = false;
             FormChoixTheme form7 = new FormChoixTheme();
             form7.Show();
@@ -65,11 +64,16 @@ namespace QCM
 
         private void button3_Click(object sender, EventArgs e)
         {
-            niveau = "Expert";
-            MessageBox.Show("Vous avez choisi la difficulté : " + niveau);
+            Controleur.niveau = "Expert";
+            MessageBox.Show("Vous avez choisi la difficulté : " + Controleur.niveau);
             this.Visible = false;
             FormChoixTheme form7 = new FormChoixTheme();
             form7.Show();
+        }
+
+        private void boutonQuitter1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

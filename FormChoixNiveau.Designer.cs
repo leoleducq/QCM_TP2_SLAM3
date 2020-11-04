@@ -34,6 +34,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.boutonRevenir = new System.Windows.Forms.Button();
+            this.boutonQuitter1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelBienvenue
@@ -106,12 +107,25 @@
             this.boutonRevenir.UseVisualStyleBackColor = true;
             this.boutonRevenir.Click += new System.EventHandler(this.boutonRevenir_Click);
             // 
+            // boutonQuitter1
+            // 
+            this.boutonQuitter1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.boutonQuitter1.ForeColor = System.Drawing.Color.Black;
+            this.boutonQuitter1.Location = new System.Drawing.Point(49, 387);
+            this.boutonQuitter1.Name = "boutonQuitter1";
+            this.boutonQuitter1.Size = new System.Drawing.Size(128, 36);
+            this.boutonQuitter1.TabIndex = 19;
+            this.boutonQuitter1.Text = "QUITTER";
+            this.boutonQuitter1.UseVisualStyleBackColor = true;
+            this.boutonQuitter1.Click += new System.EventHandler(this.boutonQuitter1_Click);
+            // 
             // FormChoixNiveau
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.boutonQuitter1);
             this.Controls.Add(this.boutonRevenir);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -134,5 +148,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button boutonRevenir;
+        private System.Windows.Forms.Button boutonQuitter1;
     }
 }
