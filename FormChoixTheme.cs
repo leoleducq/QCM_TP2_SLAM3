@@ -19,8 +19,7 @@ namespace QCM
 
         private void listeDeroulante_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Controleur.Vmodele.charger_donnees("SLAM3_TP2_THEME");
-            listeDeroulante.Items.Add(Controleur.Vmodele.DT[3].Rows[0][3].ToString());
+           
         }
 
         private void boutonRevenir_Click(object sender, EventArgs e)
@@ -40,13 +39,9 @@ namespace QCM
         private void FormChoixTheme_Load(object sender, EventArgs e)
         {
             Controleur.Vmodele.charger_donnees("SLAM3_TP2_THEME");
-            if (Controleur.Vmodele.Chargement)
+            for (int i = 0; i < Controleur.Vmodele.DT[3].Rows.Count; i++)
             {
-                //   MessageBox.Show("BD chargée dans DataTable  : " + Controleur.Vmodele.DT1.Rows.Count.ToString());
-                for (int i = 0; i < Controleur.Vmodele.DT[0].Rows.Count; i++)
-                {
-                    listeDeroulante.Items.Add(Controleur.Vmodele.DT[3].Rows[i][3].ToString());
-                }
+                listeDeroulante.Items.Add(Controleur.Vmodele.DT[3].Rows[i]["LIBELLETHEME"].ToString());
             }
         }
     }

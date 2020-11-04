@@ -105,5 +105,10 @@ namespace QCM
         {
             
         }
+
+        private void supprimerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
